@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "novaclient",
+  "version": "0.1.0",
+  "name": "NovaClient",
+  "description": "NovaClient Mod for Minecraft",
+  "authors": [
+    "iLoveYouKarol"
+  ],
+  "contact": {
+    "homepage": "https://github.com/iLoveYouKarol/NovaClient",
+    "sources": "https://github.com/iLoveYouKarol/NovaClient"
+  },
+  "license": "MIT",
+  "icon": "assets/novaclient/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.ivanfelipecontrerasarcos.novaclientmod.NovaClientMod"
+    ],
+    "client": [
+      "com.ivanfelipecontrerasarcos.novaclientmod.NovaClientMod"
+    ]
+  },
+  "mixins": [
+    "novaclient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "fabric-api": ">=0.141.4+1.21.11",
+    "minecraft": "1.21.11",
+    "java": "21"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
